@@ -11,6 +11,7 @@
 
 ### How-to
  * First time using cmakeproj
+  
   You should call *CMakeProject()* first, this will setup the necessary variable to other functions,
   then you are able to use: *CMakeConfigure()*, *CMakeCompile()* and *CMakeClean()*.
 
@@ -20,6 +21,7 @@
   (*read also below*)
 
  * if *cmakeproj.txt* is availible on filesystem
+ 
   cmakeproj will look for cmakeproj.txt and load it, if not found, then user should proceed as
   written above
   

@@ -1,13 +1,13 @@
 # cmakeproj.vim
 	
-	* function! CMakeProject(root_proj_dir,cmake_opts,make_opts)
-	* function! CMakeConfigure()
-	* function! CMakeCompile()
-	* function! CMakeClean()
-	* function! CMakeProjectTargetExecutable(target)
-	* function! CMakeProjectRun(args)
-	* function! CMakeProjectMakeChanges()
-	* function! CMakeProjectLoad(projpath)
+	 function! CMakeProject(root_proj_dir,cmake_opts,make_opts)
+	 function! CMakeConfigure()
+	 function! CMakeCompile()
+	 function! CMakeClean()
+	 function! CMakeProjectTargetExecutable(target)
+	 function! CMakeProjectRun(args)
+	 function! CMakeProjectMakeChanges()
+	 function! CMakeProjectLoad(projpath)
 
 ### How-to
  * First time using cmakeproj

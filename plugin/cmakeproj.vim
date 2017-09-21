@@ -157,6 +157,10 @@ function! CMakeProjectLoad(projpath)
 		endif
 	endif
 
+	if !exists("l:infile[1]") || !exists("l:infile[2]") || !exists("l:infile[3]")
+		return 1
+	endif
+
 	let g:cmakeproj_project_build_dir = l:infile[1]
 	let g:cmakeproj_conf_options = l:infile[2]
 	let g:cmakeproj_make_options = l:infile[3]
@@ -165,9 +169,11 @@ function! CMakeProjectLoad(projpath)
 		call CMakeProjectTargetExecutable(l:infile[4])
 	endif
 
-	echom "Loaded project: " . fnamemodify(a:projpath,":p")
 	return 0
 endfunction
+
+"Load CWD's cmakeproj.txt
+call CMakeProjectLoad("cmakeproj.txt")
 
 let &cpo = s:keepcpo
 unlet s:keepcpo
